@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FCFB707-07B7-4E6F-8FC5-FF08D2E5C7B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sistema_de_Ventas_e_inventarios_Moon_Blue</RootNamespace>
+    <AssemblyName>Sistema de Ventas e inventarios Moon Blue</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="form_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Clientes.Designer.cs">
+      <DependentUpon>form_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Compras.Designer.cs">
+      <DependentUpon>form_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Detalle_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Detalle_Compra.Designer.cs">
+      <DependentUpon>form_Detalle_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Registros.Designer.cs">
+      <DependentUpon>form_Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Tipo_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Tipo_Producto.Designer.cs">
+      <DependentUpon>form_Tipo_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Usuarios.Designer.cs">
+      <DependentUpon>form_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Ventas.Designer.cs">
+      <DependentUpon>form_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Detalle_ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Detalle_ventas.Designer.cs">
+      <DependentUpon>form_Detalle_ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Producto.Designer.cs">
+      <DependentUpon>form_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Proveedores.Designer.cs">
+      <DependentUpon>form_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades\OpcionCombo.cs" />
+    <EmbeddedResource Include="form_Clientes.resx">
+      <DependentUpon>form_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Compras.resx">
+      <DependentUpon>form_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Proveedores.resx">
+      <DependentUpon>form_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Registros.resx">
+      <DependentUpon>form_Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Tipo_Producto.resx">
+      <DependentUpon>form_Tipo_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Usuarios.resx">
+      <DependentUpon>form_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Ventas.resx">
+      <DependentUpon>form_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Producto.resx">
+      <DependentUpon>form_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Moon Blue_negro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoMB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilusuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Entidad\C_Entidad.csproj">
+      <Project>{b3575a72-90d9-4fe9-9f34-6331ea734df8}</Project>
+      <Name>C_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C_Negocio\C_Negocio.csproj">
+      <Project>{d09a7c64-c6eb-4840-88fb-a3263d8f4960}</Project>
+      <Name>C_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herramientas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta-de-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prodcuto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorias-de-producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
